@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="http://getbootstrap.com/assets/ico/favicon.png">
+
+    <title>Save History - An App to save your terminal history</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="http://getbootstrap.com/assets/js/html5shiv.js"></script>
+      <script src="http://getbootstrap.com/assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/examples/carousel/carousel.css" rel="stylesheet">
+
+    <style type="text/css">
+        #title {
+            color: white;
+            text-align: center;
+            font-size: 4em;
+            padding-bottom: 10%;
+        }
+
+
+    </style>
+    
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+     <div class="navbar-wrapper">
+       <div class="container">
+
+<!-- 
+        <div class="navbar navbar-inverse navbar-static-top" id='navbar'>
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Save History</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                 <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <!-- Indicators -->
+<!--       <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol> -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="../static/img/sl.gif" alt="First slide" id='sl-image'>
+          <div class="container">
+            <div class="carousel-caption">
+            <div>
+                <h1 id='title'><i>Save</i>History.</h1>
+            </div>
+
+              <h1>Save ALL the History</h1>
+              <p>Can't remember that command that you ran a couple of months ago? You need <i>Save</i>History. All your terminal history, from all your terminals saved in one easy place.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Sign up today, for an early access Beta</a></p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="item"> -->
+<!--           <img src="data:image/png;base64," data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:Second slide" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Easy, fast, searchable</h1>
+              <p>One easy place to search all your past terminal histoy, from anywhere. Fast search for all those commands that you rarely use in a simple web interface</p>
+              <p><a class="btn btn-large btn-primary" href="#">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="data:image/png;base64," data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:Third slide" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-large btn-primary" href="#">Browse gallery</a></p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+<!--       <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> -->
+    </div><!-- /.carousel -->
+
+    <div class="features">
+      <div class="feature">
+        <h2><i class="icon-cogs"></i>Any language</h2>
+        <p>Buildbox uses your own infrastructure to run builds, so it doesn't matter whether your application is in Java, Ruby or Go. You have the ability to use whatever language you want.</p>
+        <p>Simply run <code>gem install buildbox</code> on your server, and then <code>buildbox agent:start</code> to start running builds!</p>
+      </div>
+
+      <div class="feature">
+        <h2><i class="icon-lock"></i>Your code stays secure</h2>
+        <p>Keep your code safe and private by keeping it on your own infrastructure.</p>
+        <p>Feel confident deploying to your production systems without sharing private keys to third parties.</p>
+      </div>
+
+      <div class="feature">
+        <h2><i class="icon-code"></i>Trigger builds with HTTP</h2>
+        <p>The Buildbox API allows you to schedule builds and customize per-build environment variables.</p>
+        <p>It's easy to set up post-commit hooks on your version control system to trigger builds. We'll show you how!</p>
+      </div>
+
+      <div class="feature">
+        <h2><i class="icon-github"></i>Works with GitHub</h2>
+        <p>Connect your GitHub account to Buildbox so it updates pull requests when builds finish.</p>
+        <p>Buildbox avoids requesting full read access to your private repositories, keeping you in control of your own code.</p>
+      </div>
+
+      <div class="feature">
+        <h2><i class="icon-bitbucket"></i>...and Bitbucket</h2>
+        <p>Buildbox comes with support for Bitbucket. It can automatically create webhooks for you and have you up and running in seconds.</p>
+      </div>
+
+      <div class="feature">
+        <h2><i class="icon-cloud"></i>Run your builds on Heroku</h2>
+        <p>Ever had something run fine in development but break when you deploy it to Heroku?</p>
+        <p>No longer an issue: you can use Buildbox to run your build on Heroku. Use the same infrastructure for both production and CI!</p>
+      </div>
+    </div>
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="data:image/png;base64," data-src="holder.js/140x140" alt="Generic placeholder image">
+          <h2>Record ALL the history</h2>
+          <p>Single webapp to record and search all your history, from all your terminals in place.</p>
+          <p><a class="btn btn-default" href="#feature1">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="data:image/png;base64," data-src="holder.js/140x140" alt="Generic placeholder image">
+          <h2>Setup, the way you like it.</h2>
+          <p>Easy setup, locally configurable, simple Unixy utility that does one thing and gets out of your way.</p>
+          <p><a class="btn btn-default" href="#feature2">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="data:image/png;base64," data-src="holder.js/140x140" alt="Generic placeholder image">
+          <h2>Local Search</h2>
+          <p>Command line utility to search the remote history.</p>
+          <p><a class="btn btn-default" href="#feature3">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider"  id='feature1'>
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Record All the history</h2>
+          <p class="lead">A simple local agent that records all your bash history, and then pushes the data to the Save History app. So you have a record of all your history, from all your terminals all in one place.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="data:image/png;base64," data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider"  id='feature2'>
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="data:image/png;base64," data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Easy setup. <span class="text-muted">Unixy goodness..</span></h2>
+          <p class="lead">What gets recorded is what goes into your history file. If you dont want duplicates, configure that locally. Dont want to wait until you exit the shell to record the commands, configure it locally. Easy local setup.</p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider"  id='feature3'>
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Local search.<span class="text-muted"> We love the web</span></h2>
+          <p class="lead">But you really want to be able to search from the commandline. So we gave you one. Search all your history from the command line.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="data:image/png;base64," data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://getbootstrap.com/assets/js/jquery.js"></script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <script src="http://getbootstrap.com/assets/js/holder.js"></script>
+
+  </body>
+</html>
