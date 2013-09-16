@@ -21,7 +21,7 @@ func main() {
     if err != nil {
         fmt.Println("we have an error: %s", err)
     }
-    var timestamp = time.Now();
+    var timestamp = time.Time{}
     for line := range t.Lines {
         if(line.Text[0] == '#'){
             fmt.Println("We got a hash!")
@@ -31,23 +31,23 @@ func main() {
             }
             fmt.Println("Timestamp: ", time.Unix(timestamp, 0))
             continue;
-        }else{
-            timestamp := time.Now()
+        }else if(timestamp.IsZero()){
+            timestamp = time.Now();
         }
+
         command := HistoryRecord{line.Text, timestamp}
-        // fmt.Println(command)
+        fmt.Println(command)
         output, err := json.Marshal(command)
         if err != nil{
             fmt.Println("error1:", err)
         }
-        // fmt.Println(time.Now())
-        // fmt.Println(string(output))
+
         b := bytes.NewBufferString(string(output))
         resp, err := http.Post("http://127.0.0.1:5000/history", "text/json", b)
         if err != nil {
             fmt.Println("error2", err)
         }
-        // fmt.Println(resp)
         resp.Body.Close()
+        timestamp = time.Time{}
     }
 }

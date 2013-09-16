@@ -4,6 +4,13 @@
 {% block js %}
 {% endblock %}
 
-
 {% block main %}
+<table>
+{% for row in rows %}
+    <tr>
+        <td>{{row.time }} - {{row.command}}</td>
+    </tr>
+{% endfor %}
+</table>
+
 {% endblock %}

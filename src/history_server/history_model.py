@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, Text, DateTime
 
-from app import Base
+from history_server.history_app import Base
 
 class HistoryRecord(Base):
 
